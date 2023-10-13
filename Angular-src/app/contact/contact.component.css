@@ -1,0 +1,137 @@
+
+/* contact section start */
+
+.contact_section {
+    width: 100%;
+    float: left;
+  }
+  
+  .contact_taital {
+    width: 100%;
+    float: left;
+    font-size: 40px;
+    color:white;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .contact_section_2 {
+    width: 100%;
+    float: left;
+    padding-top: 0px;
+    margin-top: 30px;
+  }
+  
+  .padding_left_0 {
+    padding-left: 0px;
+  }
+  
+  .mail_section_1 {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .mail_section_1 .form-group{
+    width: 100%;
+  }
+  .mail_text {
+  
+    width: 100%;
+    font-size: 16px;
+    color: #2e2e2d;
+    border: 0px;
+    background-color: #efefef;
+    padding: 11px 20px;
+    border-radius: 40px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  input.mail_text::placeholder {
+    color: #2e2e2d;
+  }
+  
+  .massage-bt {
+    color: #080604;
+    width: 100%;
+    height: 110px;
+    font-size: 18px;
+    background-color: #efefef;
+    padding: 40px 20px 0px 20px;
+    border: 0px;
+    height: 110px;
+    margin-top: 20px;
+    border-radius: 40px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  textarea#comment.massage-bt::placeholder {
+    color: greenyellow;
+  }
+  .send_bt-holder {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  .send_bt {
+    width: auto;
+    font-size: 16px;
+    color: #fefefd;
+    background-color: #d07d6b;
+    padding: 10px;
+    text-transform: uppercase;
+    display: block;
+    font-weight: bold;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    border: 0;
+    margin: 0;
+    min-width: 130px;
+  }
+  
+  .send_bt:hover {
+    color: #fefefd;
+    background-color: #4a4949;
+  }
+  
+  .map_main {
+    width: 100%;
+    float: left;
+    margin-top: 90px;
+  }
+  
+  
+  
+  .video {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  }
+  
+  /* Then style the iframe to fit in the container div with full height and width */
+  .video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    
+  }
+  .contact_section .contact_section-inner{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 50px;
+    background-color: rgba(0,0,0,0.6);
+    height: 100%;
+  }
+  .contact_section .form-check-label{
+    color: #fff;
+  }
+  /* contact section end */
+  
+  
+  

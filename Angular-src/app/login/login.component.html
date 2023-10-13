@@ -1,0 +1,23 @@
+<div align="center" class="login-form">
+  <h3>Admin Login</h3>
+  <form (ngSubmit)="logindata()">
+    <input
+      placeholder=" ID"
+      type="text"
+      class="mail_text"
+      id="uid"
+      name="uid"
+      [(ngModel)]="user.uid"
+    />
+    <input
+      placeholder="Password"
+      type="password"
+      class="mail_text"
+      id="upswd"
+      name="upswd"
+      [(ngModel)]="user.upswd"
+    />
+    <input type="submit" value="Login" />
+  </form>
+  <!-- <a routerLink="{ link }">Insert Record</a> -->
+</div>

@@ -1,0 +1,213 @@
+<div class="contact_section layout_padding">
+  <div class="contact_sec-holder" style="position: relative">
+    <div class="video">
+      <video width="320" height="240" muted>
+        <source src="assets/video1.mp4" />
+      </video>
+    </div>
+    <div class="contact_section-inner">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <h1 class="contact_taital">Submit Your Details</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="register-form contact_section_2">
+        <div class="mail_section_1">
+          <form [formGroup]="form" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+              <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                #fullname
+                (ngModel)="(fullname)"
+                formControlName="fullname"
+                placeholder="Full Name"
+                class="mail_text"
+                [ngClass]="{ 'is-invalid': submitted && f['fullname'].errors }"
+              />
+              <div
+                *ngIf="submitted && f['fullname'].errors"
+                class="invalid-feedback"
+              >
+                <div *ngIf="f['fullname'].errors['required']">
+                  Fullname is required
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <input
+                type="text"
+                id="username"
+                name="username"
+                #username
+                (ngModel)="(username)"
+                placeholder="Username"
+                formControlName="username"
+                class="mail_text"
+                [ngClass]="{ 'is-invalid': submitted && f['username'].errors }"
+              />
+              <div
+                *ngIf="submitted && f['username'].errors"
+                class="invalid-feedback"
+              >
+                <div *ngIf="f['username'].errors['required']">
+                  Username is required
+                </div>
+                <div *ngIf="f['username'].errors['minlength']">
+                  Username must be at least 6 characters
+                </div>
+                <div *ngIf="f['username'].errors['maxlength']">
+                  Username must not exceed 20 characters
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <input
+                type="text"
+                id="email"
+                name="email"
+                #email
+                (ngModel)="(email)"
+                placeholder="Email"
+                formControlName="email"
+                class="mail_text"
+                [ngClass]="{ 'is-invalid': submitted && f['email'].errors }"
+              />
+              <div
+                *ngIf="submitted && f['email'].errors"
+                class="invalid-feedback"
+              >
+                <div *ngIf="f['email'].errors['required']">
+                  Email is required
+                </div>
+                <div *ngIf="f['email'].errors['email']">Email is invalid</div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <input
+                type="password"
+                id="password"
+                name="password"
+                #password
+                (ngModel)="(password)"
+                placeholder="Password"
+                formControlName="password"
+                class="mail_text"
+                [ngClass]="{ 'is-invalid': submitted && f['password'].errors }"
+              />
+              <div
+                *ngIf="submitted && f['password'].errors"
+                class="invalid-feedback"
+              >
+                <div *ngIf="f['password'].errors['required']">
+                  Password is required
+                </div>
+                <div *ngIf="f['password'].errors['minlength']">
+                  Password must be at least 6 characters
+                </div>
+                <div *ngIf="f['password'].errors['maxlength']">
+                  Username must not exceed 40 characters
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <input
+                type="password"
+                id="password"
+                name="password"
+                #password
+                (ngModel)="(password)"
+                placeholder="Confirm Password"
+                formControlName="confirmPassword"
+                class="mail_text"
+                [ngClass]="{
+                  'is-invalid': submitted && f['confirmPassword'].errors
+                }"
+              />
+              <div
+                *ngIf="submitted && f['confirmPassword'].errors"
+                class="invalid-feedback"
+              >
+                <div *ngIf="f['confirmPassword'].errors['required']">
+                  Confirm Password is required
+                </div>
+                <div *ngIf="f['confirmPassword'].errors['matching']">
+                  Confirm Password does not match
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group form-check">
+              <input
+                type="checkbox"
+                id="checkbox"
+                name="checkbox"
+                #checkbox
+                (ngModel)="(checkbox)"
+                formControlName="acceptTerms"
+                class="form-check-input"
+                [ngClass]="{
+                  'is-invalid': submitted && f['acceptTerms'].errors
+                }"
+              />
+              <label for="acceptTerms" class="form-check-label"
+                >I have read and agree to the Terms</label
+              >
+              <div
+                *ngIf="submitted && f['acceptTerms'].errors"
+                class="invalid-feedback"
+              >
+                Accept Terms is required
+              </div>
+            </div>
+
+            <div class="send_bt-holder">
+              <button type="submit" value="insert" class="send_bt">
+                Submit
+              </button>
+              <button
+                type="button"
+                (click)="onReset()"
+                class="send_bt float-right"
+              >
+                Reset
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="contact_section-inner">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="map_main">
+          <div class="map-responsive">
+            <iframe
+              width="100%"
+              height="600"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=kalani%20nagar%20indore+(CCD)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              ><a href="https://www.maps.ie/population/"
+                >Find CCD on Map</a
+              ></iframe
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

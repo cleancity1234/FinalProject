@@ -1,0 +1,38 @@
+<div class="product-opratiton cart-back">
+  <div class="product-opratiton-inner" align="center">
+    <div class="login-form">
+      <h1>Update Operation</h1>
+      <form #updatefrom="ngForm" (ngSubmit)="updatedata(updatefrom)">
+        <input
+          type="number"
+          class="mail_text"
+          placeholder="PID"
+          id="pid"
+          name="pid"
+          #pid
+          (ngModel)="(pid)"
+        />
+        <input
+          type="text"
+          class="mail_text"
+          placeholder="PNAME"
+          id="pname"
+          name="pname"
+          #pname
+          (ngModel)="(pname)"
+        />
+        <input
+          type="number"
+          class="mail_text"
+          placeholder="PRATE"
+          id="prate"
+          name="prate"
+          #prate
+          (ngModel)="(prate)"
+        />
+        <br />
+        <input type="submit" value="update" />
+      </form>
+    </div>
+  </div>
+</div>

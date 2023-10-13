@@ -1,0 +1,22 @@
+<div class="product-opratiton cart-back">
+  <div class="product-opratiton-inner" align="center">
+    <div class="login-form">
+      <h1>Delete Operation</h1>
+      <form #deletefrom="ngForm" (ngSubmit)="deletedata(deletefrom)">
+        <input
+          type="number"
+          placeholder="PID"
+          id="pid"
+          class="mail_text"
+          name="pid"
+          #pid
+          (ngModel)="(pid)"
+        />
+
+        <br />
+
+        <input type="submit" value="delete" />
+      </form>
+    </div>
+  </div>
+</div>

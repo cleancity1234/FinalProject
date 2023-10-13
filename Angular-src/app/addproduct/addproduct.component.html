@@ -1,0 +1,44 @@
+<div class="product-opratiton cart-back">
+  <div class="product-opratiton-inner" align="center">
+    <div class="login-form">
+      <h1>Add Operation</h1>
+      <form #insertfrom="ngForm" (ngSubmit)="insertdata(insertfrom)">
+        <input
+          placeholder="PID"
+          type="number"
+          class="mail_text"
+          id="pid"
+          name="pid"
+          #pid
+          (ngModel)="(pid)"
+        />
+
+        <br />
+
+        <input
+          placeholder="PNAME"
+          type="text"
+          class="mail_text"
+          id="pname"
+          name="pname"
+          #pname
+          (ngModel)="(pname)"
+        />
+
+        <br />
+
+        <input
+          placeholder="PRATE"
+          type="number"
+          class="mail_text"
+          id="prate"
+          name="prate"
+          #prate
+          (ngModel)="(prate)"
+        />
+
+        <input type="submit" value="insert" />
+      </form>
+    </div>
+  </div>
+</div>

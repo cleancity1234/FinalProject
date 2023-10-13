@@ -1,0 +1,29 @@
+.login-form{
+    max-width: 600px;
+    margin: 150px auto 150px;
+    background-color: #d07d6b;
+    padding: 40px;
+    border-radius: 20px;
+}
+.login-form h3{
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.login-form input[type="submit"] {
+    width: auto;
+    font-size: 16px;
+    color: #fefefd;
+    background-color: #d72026;;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    border: 0;
+    margin: 0;
+    min-width: 130px;
+    margin-top: 40px;
+    display: inline-block;
+}
